@@ -1,0 +1,47 @@
+/* index.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-row {
+    margin: 10px 0;
+}
+
+.data-label {
+    font-weight: bold;
+    color: #5c5c5c;
+    margin-bottom: 5px;
+}
+
+.data-value {
+    display: block;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+/* Additional styling */
+/* You can add more styles below this line as needed */
