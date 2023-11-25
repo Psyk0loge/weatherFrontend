@@ -1,0 +1,16 @@
+name: Deploy Frontend
+
+on:
+  push:
+    branches:
+      - main  # oder Ihren Haupt-Branch
+
+jobs:
+  deploy:
+    runs-on: self-hosted  # Wichtig, um Ihren selbstgehosteten Runner zu verwenden
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Sync Repository
+      run: cd /home/mosni/Software/Frontend/weatherFrontend && git pull
