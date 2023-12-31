@@ -3,11 +3,11 @@ name: Deploy Frontend
 on:
   push:
     branches:
-      - master  # oder Ihren Haupt-Branch
+      - master
 
 jobs:
   deploy:
-    runs-on: self-hosted  # Wichtig, um Ihren selbstgehosteten Runner zu verwenden
+    runs-on: self-hosted
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
