@@ -7,10 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted
+    runs-on: weatherFrontendRunner
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
     - name: Sync Repository
       run: cd /home/mosni/Software/Frontend/weatherFrontend && git pull
