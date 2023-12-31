@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("worked")
-    fetch('www.monnem-weather.de/weather') // Replace with your actual backend URL
+    fetch('www.monnem-wetter.de/weather') // Replace with your actual backend URL
         .then(response => response.json())
         .then(data => {
             document.getElementById('temperature').textContent = data.temperature;
